@@ -15,6 +15,7 @@ public class Sort_Array_By_Parity_II {
                 int temp = arr[even];
                 arr[even]=arr[odd];
                 arr[odd]=temp;
+                
             }
         }
     }
