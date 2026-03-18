@@ -1,4 +1,4 @@
-package Rec;
+
 public class rec_parameter_function_way {
     public static void main(String[] args) {
         System.out.println(rec(0,5));

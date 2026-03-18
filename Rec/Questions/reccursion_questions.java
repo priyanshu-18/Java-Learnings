@@ -1,4 +1,4 @@
-package Rec;
+
 import java.util.Scanner;
 
 public class reccursion_questions {

@@ -1,4 +1,4 @@
-package Rec;
+
 public class rec_arr_rev {
     public static void main(String[] args) {
         int arr[]={1,4,6,87,5,4,4};

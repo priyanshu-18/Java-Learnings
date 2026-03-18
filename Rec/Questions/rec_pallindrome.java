@@ -1,4 +1,4 @@
-package Rec;
+
 public class rec_pallindrome {
     public static void main(String[] args) {
        System.out.println(rec("priyanshu",0));
