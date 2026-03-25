@@ -4,7 +4,7 @@ public class merge_sorting {
 
     static void merge_sort(int arr[], int low, int high) {
 
-        if (low >= high) return;
+        if (low <= high) return;
 
         int mid = (low + high) / 2;
 
