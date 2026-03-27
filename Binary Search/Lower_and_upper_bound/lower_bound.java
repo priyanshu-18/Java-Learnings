@@ -1,3 +1,4 @@
+public class lower_bound {
 
 static int lower_bound(int arr[], int low, int high, int ans, int target) {
         while (low <= high) {
@@ -12,12 +13,15 @@ static int lower_bound(int arr[], int low, int high, int ans, int target) {
         }
             return ans;
     }
+    public static void main(String[] args) {
+        
 
-public class lower_bound {
-    int arr[]={1,2,3,4,5,5,5,5,5,6,6,7,8};
-    int low=0;
-    int high=arr.length-1;
-    int ans = arr.length;
-    int lower =lower_bound(arr[],low,high,ans,5);
-    System.out.println(lower);
+        
+        int arr[]={1,2,3,4,5,5,5,5,5,6,6,7,8};
+        int low=0;
+        int high=arr.length-1;
+        int ans = arr.length;
+        int lower =lower_bound(arr,low,high,ans,5);
+        System.out.println(lower);
+    }
 }
