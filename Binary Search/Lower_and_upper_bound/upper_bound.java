@@ -3,7 +3,7 @@ public class upper_bound {
 static int upper_bound(int arr[], int low, int high, int ans, int target) {
         while (low <= high) {
             int mid = low + (high - low) / 2;
-            if (arr[mid] >= target) {
+            if (arr[mid] > target) {
                 ans = mid;
                 high = mid - 1;
             } else {
