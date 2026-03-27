@@ -1,6 +1,6 @@
 public class upper_bound {
 
-static int lower_bound(int arr[], int low, int high, int ans, int target) {
+static int upper_bound(int arr[], int low, int high, int ans, int target) {
         while (low <= high) {
             int mid = low + (high - low) / 2;
             if (arr[mid] >= target) {
@@ -21,7 +21,7 @@ static int lower_bound(int arr[], int low, int high, int ans, int target) {
         int low=0;
         int high=arr.length-1;
         int ans = arr.length;
-        int lower =lower_bound(arr,low,high,ans,5);
+        int lower =upper_bound(arr,low,high,ans,5);
         System.out.println(lower);
     }
 }
