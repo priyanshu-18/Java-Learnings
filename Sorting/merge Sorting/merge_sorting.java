@@ -9,7 +9,7 @@ public class merge_sorting {
         int mid = (low + high) / 2;
 
         merge_sort(arr, low, mid);
-        merge_sort(arr, mid + 1, high);   //here both are smae testing 
+        merge_sort(arr, mid + 1, high);   //here both are smae testing it and 
 
         merge(arr, low, mid, high);
     }
