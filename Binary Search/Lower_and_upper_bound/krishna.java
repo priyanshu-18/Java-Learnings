@@ -1,4 +1,4 @@
-package 
+package Binary
 import java.util.*;
 
 public class krishna {
