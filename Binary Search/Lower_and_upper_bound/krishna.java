@@ -1,4 +1,4 @@
-
+package 
 import java.util.*;
 
 public class krishna {
