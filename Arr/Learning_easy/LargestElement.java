@@ -35,7 +35,8 @@ public class LargestElement {
         System.out.println(Slargest);
 
 
-        //now we have to do same things for the 
+        //now we have to do same things for the Second Smallest code
+        int Smallest = arr[0];
 
 
     }
