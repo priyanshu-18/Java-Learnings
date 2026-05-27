@@ -18,7 +18,7 @@ public class LargestElement {
 
 
         //method 2 (optimal)
-        
+
         int arr[]={2,3,4,5,6,4,3,2,7};
         int largest = arr[0];
         int Slargest = Integer.MIN_VALUE;
@@ -33,6 +33,9 @@ public class LargestElement {
             }
         }
         System.out.println(Slargest);
+
+
+        
 
 
     }
