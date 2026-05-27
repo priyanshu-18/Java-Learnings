@@ -17,7 +17,9 @@ public class LargestElement {
 
 
 
-        //method 2 ()
+        //method 2 (optimal)
+        int arr[]={2,3,4,5,6,4,3,2,7};
+        
 
     }
     
