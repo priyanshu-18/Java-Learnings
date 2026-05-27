@@ -3,7 +3,7 @@ public class LargestElement {
 
     public static void main(String[] args) {
        
-        //methods 1(brust)
+        //methods 1(brute)
         int arr[]={2,3,4,5,6,4,3,2,7};
         int largest= arr[0];
         
