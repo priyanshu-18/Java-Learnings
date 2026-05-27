@@ -22,6 +22,10 @@ public class LargestElement {
         int largest = arr[0];
         int Slargest = Integer.MIN_VALUE;
 
+        for(int i=0;i<arr.length;i++){
+            
+        }
+
 
     }
     
