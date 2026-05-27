@@ -27,8 +27,8 @@ public class LargestElement {
                 Slargest = largest;
                 largest = arr[i];
             }
-            else{
-                
+            else if(arr[i]){
+
             }
         }
 
