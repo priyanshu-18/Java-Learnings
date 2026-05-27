@@ -31,7 +31,7 @@ public class LargestElement {
                 Slargest=arr[i];
             }
         }
-        
+        System.out.println(Slargest);
 
 
     }
