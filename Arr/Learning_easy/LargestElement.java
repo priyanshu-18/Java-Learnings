@@ -31,6 +31,7 @@ public class LargestElement {
                 Slargest=arr[i];
             }
         }
+        return s
 
 
     }
