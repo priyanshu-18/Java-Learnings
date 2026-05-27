@@ -39,7 +39,7 @@ public class LargestElement {
         int Smallest = arr[0]; int SSmallest = Integer.MAX_VALUE;
 
         for(int i=1;i<arr.length;i++){
-            if(arr[i]>Smallest){
+            if(arr[i]<Smallest){
                 SSmallest = Smallest;
                 Smallest = arr[i];
             }
