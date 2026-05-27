@@ -43,7 +43,7 @@ public class LargestElement {
                 SSmallest = Smallest;
                 Smallest = arr[i];
             }
-            else if(arr[i]<Smallest && arr[i]>SSmallest){
+            else if(arr[i]>Smallest && arr[i]<SSmallest){
                 SSmallest=arr[i];
             }
         }
