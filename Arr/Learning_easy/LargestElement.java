@@ -36,7 +36,8 @@ public class LargestElement {
 
 
         //now we have to do same things for the Second Smallest code
-        int Smallest = arr[0];
+        int Smallest = arr[0]; int SSmallest = Integer.MAX_VALUE;
+        
 
 
     }
