@@ -42,13 +42,37 @@ public class Union {
         int nums1[]={1,1,2,3,4,5};
         int nums2[]={2,3,4,4,5,6,6,7};
 
-        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> Union1 = new ArrayList<>();
 
         while(low<nums1.length && high<nums2.length){
-            if(nums1[low]<nums2[high]){
-                list.add(nums1[low]);
+            if(nums1[low]<=nums2[high]){
+                if(Union1.size()==0 || Union1.get(Union1.size()-1)!=nums1[low]){
+                    Union1.add(nums1[low]);
+                }
+                low++;
+            }else{
+                if(Union1.size()==0 || Union1.get(Union1.size()-1)!=nums2[high]){
+                    Union1.add(nums2[high]);
+                }
+                high++;
             }
+            
         }
+        while(low<nums1.length){
+         if(Union1.size()==0 || Union1.get(Union1.size()-1)!=nums1[low]){
+            Union1.add(nums1[low]);
+            }
+            low++;
+        }
+
+        while(high<nums2.length){
+            if(Union1.size()==0 || Union1.get(Union1.size()-1)!=nums2[high]){
+                Union1.add(nums2[high]);
+                }
+                high++;
+        }
+
+        System.out.println(Union1);
 
     }
 }
