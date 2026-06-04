@@ -34,29 +34,59 @@ public class Largest_subaaray_with_given_sum_k {
         // ==========================
         // ===== Better =============
         // ==========================
-        int arr[]={1,2,1,1,1};
-        int K=3;
+        // int arr[]={1,2,1,1,1};
+        // int K=3;
         
 
-        int max_length=0;
+        // int max_length=0;
         
         
-        for(int i =0 ;i<arr.length;i++){
-            int sum =0;
-            for(int j=i;j<arr.length;j++){
-                sum+=arr[j];
-                int length=j-i+1;
+        // for(int i =0 ;i<arr.length;i++){
+        //     int sum =0;
+        //     for(int j=i;j<arr.length;j++){
+        //         sum+=arr[j];
+        //         int length=j-i+1;
                 
-                    if(sum==K){
-                        if(length>max_length ){
-                            max_length = length;
-                        }
-                    }
+        //             if(sum==K){
+        //                 if(length>max_length ){
+        //                     max_length = length;
+        //                 }
+        //             }
 
+        //     }
+
+        // }
+        // System.out.println(max_length);
+
+
+        // ==========================
+        // ===== OPTIMAL SOLN =======
+        // ==========================
+        int arr[]={1,2,1,1,1,2};
+        int k=3;
+        int length_ans =0;
+        int left =0;
+        int sum =0;
+
+        for(int right =0;right<arr.length;right++){
+            sum+=arr[right];
+
+            while(sum>k){
+
+            sum = sum - arr[left];
+            left++;
             }
 
+
+            if(sum==k){
+                int length = right - left +1;
+                if(length > length_ans){
+                    length_ans = length;
+                }
+            }
         }
-        System.out.println(max_length);
+        System.out.println(length_ans);
+
         
     }
 }
