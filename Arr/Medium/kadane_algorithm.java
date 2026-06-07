@@ -72,8 +72,8 @@ public class kadane_algorithm {
             }
         }
 
-        for(int i=0;i<n;i++){
-            if()
+        for(int i=start;i<=end;i++){
+            System.out.print(nums[i]+" ");
         }
 }
 }
