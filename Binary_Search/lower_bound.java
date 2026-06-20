@@ -11,7 +11,7 @@ public class lower_bound {
 
         int low=0;
         int high=n-1;
-        while(low<high){
+        while(low<=high){
             int mid = low + (high - low)/2;
 
             if(nums[mid]>=target){
@@ -24,7 +24,7 @@ public class lower_bound {
 
         System.out.println(ans);
         System.out.println(low);  // both gave same answer and both works use any one 
-        
+
         
     }
 }
