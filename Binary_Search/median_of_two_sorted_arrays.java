@@ -47,7 +47,7 @@ public class median_of_two_sorted_arrays {
            }else if(l1>r2){
            high = cut1 -1;
            }else{
-            low = cut1+1;;
+            low = cut1+1;
            }
            
 
