@@ -24,17 +24,51 @@ public class delete_kth_element {
 
     
 }
-static Node deleteTail(Node head){
-    if( head==null || head.next==null) return null;
-    Node temp = head;
-    while(temp.next.next!=null){
-        temp=temp.next;
-    }
-    temp.next.prev=null;
-    temp.next = null;
-    return head;
+static Node delete_kth_element(Node head, int k) {
 
-}
+        if (head == null || head.next == null)
+
+            return null;
+
+        if (k == 1) {
+
+            head = head.next;
+
+            head.prev = null;
+
+            return head;
+
+        }
+
+        int cnt = 0;
+
+        Node temp = head;
+
+        while (temp != null) {
+
+            cnt++;
+
+            if (cnt == (k - 1)) {
+
+                temp.next = temp.next.next;
+
+                if (temp.next != null) {
+
+                    temp.next.prev = temp;
+
+                }
+
+                break;
+
+            }
+
+            temp = temp.next;
+
+        }
+
+        return head;
+
+    }
     public static void main(String[] args) {
         Node n4 = new Node(9);
         Node n3 = new Node(7);
@@ -55,7 +89,7 @@ static Node deleteTail(Node head){
         n4.next = null;
 
 
-        Node head = deleteTail(n1);
+        Node head = delete_kth_element(n1,3);
         Node temp = head;
        while(temp!=null){
         System.out.print(temp.data+"->");

@@ -75,9 +75,6 @@ public class DLL {
 
         head = delete_head_of_Dll(head);
 
-       while(temp!=null){
-        System.out.print(temp.data+"->");
-        temp=temp.next;
-       }
+       
     }
 }
